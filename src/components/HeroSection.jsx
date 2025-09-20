@@ -3,7 +3,7 @@ import HeroImage from "../assets/hero.png";
 
 export default function HeroSection() {
   return (
-    <section className="bg-white relative overflow-hidden">
+    <section className="bg-white relative overflow-hidden w-screen min-h-screen">
       <div className="max-w-7xl mx-auto px-6 lg:px-16 py-16 flex flex-col lg:flex-row items-end">
         
         <div className="lg:w-1/2 space-y-8">

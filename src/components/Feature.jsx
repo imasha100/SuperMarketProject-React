@@ -15,8 +15,8 @@ const Feature = ({ icon: Icon, title, description }) => (
 
 const FeatureSection = () => {
   return (
-    <div className="flex justify-center p-8">
-      <div className="flex max-w-7xl justify-between rounded-full bg-white px-8 py-6 shadow-lg">
+    <div className="w-screen  flex items-center justify-center bg-gray-50">
+      <div className="flex max-w-7xl justify-between rounded-full bg-white px-8 py-6 shadow-lg flex-wrap">
         <Feature
           icon={Truck}
           title="Free shipping"

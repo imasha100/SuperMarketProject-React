@@ -2,7 +2,11 @@ import { useState } from 'react'
 import './App.css'
 import Navbar from "./components/Navbar";  
 import HeroSection from './components/HeroSection'; 
-import Feature from './components/Feature';
+import Categories from './components/Categories';
+import Feature from'./components/Feature';
+import Card from './components/Card';
+import MobilePhone from './components/MobilePhone';
+import LatestNews from './components/LatestNews';
 import Subscription from './components/Subscription';
 import Footer from './components/Footer';
 
@@ -16,8 +20,13 @@ function App() {
       <Navbar />
       <HeroSection/>
       <Feature/>
+      <Categories/>
+      <Card/>
+      <MobilePhone/>
+      <LatestNews/>
       <Subscription/>
       <Footer/>
+      
       
 
       

@@ -1,80 +1,78 @@
-// Footer.js
 import React from 'react';
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
-import { IoLink, IoCall, IoMail } from 'react-icons/io5';
-import logo from "../assets/cart.jpeg";
+import { FaFacebookF, FaTwitter, FaInstagram, FaPhoneAlt, FaEnvelope, FaChevronRight } from 'react-icons/fa';
+import { BsCheckCircleFill, BsFileTextFill, BsLockFill, BsArrowRepeat } from 'react-icons/bs';
+
+// Assuming you have an SVG logo or can import an image for your logo
+// import Logo from './path-to-your-logo.svg';
 
 const Footer = () => {
   return (
-    <footer className="w-screen min-h-screen bg-white text-gray-200 py-16 relative">
-      {/* Top line above footer */}
-      <div className="w-full h-[2px] bg-green-600 mb-8"></div>
-
-      {/* Full-width container for content */}
-      <div className="px-8 lg:px-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-        
-        {/* Left Section: Logo & Quote */}
-        <div className="flex flex-col items-start space-y-4">
-          <div className="flex items-center space-x-2">
-            <img src={logo} alt="XtraMarket Logo" className="h-15 w-15" />
-            <span className="text-4xl font-bold text-green-800">XtraMarket</span>
+    <footer className="bg-white-950 text-gray-300 py-16 px-4 md:px-8 lg:px-16">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        {/* Column 1: Brand and Socials */}
+        <div className="flex flex-col items-center md:items-start text-center md:text-left">
+          <div className="flex items-center space-x-2 mb-4">
+            {/* Replace with your logo component or image */}
+            {/* <Logo className="h-8 w-8 text-teal-500" /> */}
+            <span className="text-2xl font-bold text-white">XtraSupermarket</span>
           </div>
-          <p className="max-w-sm leading-relaxed text-green-900 font-semibold">
+          <p className="text-lg leading-relaxed mb-6 max-w-sm text-green-900 font-semibold">
             "Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind."
           </p>
-          <div className="flex space-x-4 mt-4">
-            <a href="#" className="p-3 bg-[#1e293b] hover:bg-green-800 rounded-full transition-colors duration-300">
-              <FaFacebook size={20} />
+          <div className="flex space-x-4">
+            <a href="#" className="p-3 rounded-full bg-[#0f2c3f] hover:bg-green-500 transition-colors duration-300">
+              <FaFacebookF />
             </a>
-            <a href="#" className="p-3 bg-[#1e293b] hover:bg-green-800 rounded-full transition-colors duration-300">
-              <FaTwitter size={20} />
+            <a href="#" className="p-3 rounded-full bg-[#0f2c3f] hover:bg-green-500 transition-colors duration-300">
+              <FaTwitter />
             </a>
-            <a href="#" className="p-3 bg-[#1e293b] hover:bg-green-800 rounded-full transition-colors duration-300">
-              <FaInstagram size={20} />
+            <a href="#" className="p-3 rounded-full bg-[#0f2c3f] hover:bg-green-500 transition-colors duration-300">
+              <FaInstagram />
             </a>
           </div>
         </div>
 
-        {/* Middle Section: Useful Links */}
-        <div className="flex flex-col items-start space-y-4">
-          <h3 className="text-lg font-bold text-green-900">Useful Links</h3>
-          <div className="w-16 h-1 bg-gray-700 rounded"></div>
-          <a href="#" className="flex items-center space-x-2 text-green-900 hover:text-green-600 transition-colors duration-300 font-bold">
-            <IoLink className="text-[#4ade80]" size={20} />
-            <span>Help Center</span>
-          </a>
-          <a href="#" className="flex items-center space-x-2 text-green-900 hover:text-green-600 transition-colors duration-300 font-bold">
-            <IoLink className="text-[#4ade80]" size={20} />
-            <span>Terms & Conditions</span>
-          </a>
-          <a href="#" className="flex items-center space-x-2 text-green-900 hover:text-green-600 transition-colors duration-300 font-bold">
-            <IoLink className="text-[#4ade80]" size={20} />
-            <span>Privacy Policy</span>
-          </a>
-          <a href="#" className="flex items-center space-x-2 text-green-900 hover:text-green-600 transition-colors duration-300 font-bold">
-            <IoLink className="text-[#4ade80]" size={20} />
-            <span>Refund Policy</span>
-          </a>
-          <div className="flex items-center space-x-2 text-green-900 font-semibold">
-            <IoCall className="text-[#4ade80]" size={20} />
-            <span>+12 534 565 896</span>
-          </div>
-          <div className="flex items-center space-x-2 text-green-900 font-semibold">
-            <IoMail className="text-[#4ade80]" size={20} />
-            <span>info@xtramarket.com</span>
-          </div>
+        {/* Column 2: Useful Links */}
+        <div className="flex flex-col items-center md:items-start text-center md:text-left">
+          <h3 className="text-xl font-semibold text-green-500 mb-4">Useful Links</h3>
+          <ul className="space-y-4 text-green-600 font-semibold">
+            <li className="flex items-center space-x-2">
+              <BsCheckCircleFill className="text-[#0f2c3f] text-xl" />
+              <a href="#" className="hover:text-green-900 transition-colors duration-300">Help Center</a>
+            </li>
+            <li className="flex items-center space-x-2">
+              <BsFileTextFill className="text-[#0f2c3f] text-xl" />
+              <a href="#" className="hover:text-green-900 transition-colors duration-300">Terms & Conditions</a>
+            </li>
+            <li className="flex items-center space-x-2">
+              <BsLockFill className="text-[#0f2c3f] text-xl" />
+              <a href="#" className="hover:text-green-900 transition-colors duration-300">Privacy Policy</a>
+            </li>
+            <li className="flex items-center space-x-2">
+              <BsArrowRepeat className="text-[#0f2c3f] text-xl" />
+              <a href="#" className="hover:text-green-900 transition-colors duration-300">Refund Policy</a>
+            </li>
+            <li className="flex items-center space-x-2">
+              <FaPhoneAlt className="text-[#0f2c3f] text-xl" />
+              <span>+12 534 565 896</span>
+            </li>
+            <li className="flex items-center space-x-2">
+              <FaEnvelope className="text-[#0f2c3f] text-xl" />
+              <span>info@xtramarket.com</span>
+            </li>
+          </ul>
         </div>
 
-        {/* Right Section: Call to Action */}
-        <div className="flex flex-col items-start md:items-end text-left md:text-right space-y-4">
-          <h3 className="text-xl md:text-2xl font-bold leading-tight text-green-900">
+        {/* Column 3: Call to Action */}
+        <div className="flex flex-col items-center md:items-start text-center md:text-left">
+          <h3 className="text-xl font-semibold text-white mb-4">
             Interested in a Great Way <br />
-            <span className="text-[#4ade80]">Make Money?</span>
+            <span className="text-green-600">Make Money?</span>
           </h3>
-          <p className="max-w-xs leading-relaxed text-green-900 font-semibold">
+          <p className="text-lg text-green-900 font-semibold leading-relaxed mb-6 max-w-sm">
             A supermarket is a self-service shop offering a wide variety of food, beverages and household products.
           </p>
-          <button className="mt-4 px-6 py-3 bg-green-600 text-white cursor-pointer font-bold rounded-full hover:bg-green-400 transition-colors duration-300 text-2xl">
+          <button className="bg-green-500 text-white font-semibold py-3 px-8 rounded-full hover:bg-green-600 cursor-pointer text-xl transition-colors duration-300">
             Become a Seller
           </button>
         </div>

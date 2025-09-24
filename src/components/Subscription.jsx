@@ -2,20 +2,32 @@ import React from 'react';
 
 const Subscription = () => {
   return (
-    <div className="flex justify-center items-center bg-green-100 p-4 md:p-8 rounded-full shadow-xl m-4 min-w-screen mt-10 mb-0">
-      <div className="flex flex-col md:flex-row items-center w-full max-w-4xl p-6 md:p-10 rounded-lg">
-        <h2 className="text-green-900 text-2xl md:text-4xl font-bold mb-4 md:mb-0 md:mr-8">
-          Subscribe to <span className="text-[#00e676]">Newsletter</span>
-        </h2>
-        <div className="flex flex-1 w-full md:max-w-md bg-white rounded-full overflow-hidden shadow-lg">
-          <input
-            type="email"
-            placeholder="Enter your email..."
-            className="flex-1 px-6 py-3 text-gray-700 outline-none focus:ring-2 focus:ring-[#00e676]"
-          />
-          <button className="bg-[#00e676] text-white font-bold py-3 px-6 cursor-pointer rounded-full transition duration-300 ease-in-out hover:bg-[#00c853] focus:outline-none focus:ring-2 focus:ring-[#00e676] focus:ring-opacity-50">
-            Subscribe
-          </button>
+    <div className="bg-green-700 py-12 px-4 md:px-8 lg:px-16">
+      <div className="max-w-7xl mx-auto rounded-3xl p-8 md:p-10 lg:p-12 bg-green-400">
+        <div className="flex flex-col lg:flex-row items-center justify-between text-center lg:text-left space-y-8 lg:space-y-0 lg:space-x-12">
+          {/* Text Content */}
+          <div className="flex-1 max-w-lg lg:max-w-none">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white leading-tight">
+              Subscribe to <span className="bg-green-300 text-gray-900 px-2 rounded-md">Newsletter</span>
+            </h2>
+          </div>
+
+          {/* Input and Button */}
+          <div className="flex-1 w-full max-w-md lg:max-w-lg">
+            <form className="flex w-full bg-white rounded-full overflow-hidden p-2 shadow-lg">
+              <input
+                type="email"
+                placeholder="Enter your email .."
+                className="flex-1 min-w-0 p-3 bg-transparent text-gray-800 placeholder-gray-500 focus:outline-none"
+              />
+              <button
+                type="submit"
+                className="bg-teal-500 text-white font-semibold py-3 px-6 rounded-full cursor-pointer hover:bg-teal-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
